@@ -28,8 +28,8 @@ export class LoginComponent implements OnInit {
 
   public logIn(): void {
     this.auth.login({
-      email: 'test@20202020020asfas@$23523fsa2',
-      password: 'a43543asfgt3qwer!4'
+      email: this.loginForm.controls['email'].value,
+      password: this.loginForm.controls['password'].value
     }).pipe(take(1)).subscribe(
       () => {
         this.route.navigateByUrl('products')
