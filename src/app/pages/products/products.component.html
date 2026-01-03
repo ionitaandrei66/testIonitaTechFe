@@ -1,0 +1,9 @@
+<div [formGroup]="formProduct">
+<input placeholder="title" formControlName="title" />
+<input placeholder="price" formControlName="price" />
+<button (click)="createProduct()">Create</button>
+</div>
+
+@for (product of products; track product?.title) {
+<div > {{product?.title}} - {{product?.price}}  </div>
+}

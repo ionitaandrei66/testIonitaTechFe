@@ -1,0 +1,11 @@
+<div>
+
+  <section [formGroup]="loginForm">
+    <input placeholder="name" formControlName="email" />
+    <input placeholder="password" formControlName="password" />
+    <button (click)="logIn()">
+      Submit
+    </button>
+  </section>
+
+</div>
