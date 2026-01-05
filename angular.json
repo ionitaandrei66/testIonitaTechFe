@@ -43,6 +43,7 @@
           },
           "configurations": {
             "production": {
+              "prerender": false,
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
