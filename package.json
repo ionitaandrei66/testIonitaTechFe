@@ -7,6 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "build:ssr": "ng build && ng build --configuration production && ng run APP_NAME:server:production",
+    "serve:ssr": "node dist/APP_NAME/server/server.mjs",
     "serve:ssr:feTestProject": "node dist/fe-test-project/server/server.mjs"
   },
   "private": true,

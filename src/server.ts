@@ -37,6 +37,11 @@ app.use(
   }),
 );
 
+app.use((req, res, next) => {
+  res.setHeader('x-ssr', 'true');
+  next();
+});
+
 /**
  * Handle all other requests by rendering the Angular application.
  */
